@@ -1,0 +1,24 @@
+{
+  "name": "s2-administrasi-publik-website",
+  "version": "1.0.0",
+  "description": "Modern academic website for the Master of Public Administration study program.",
+  "private": true,
+  "scripts": {
+    "copy:assets": "mkdir -p dist/img dist/icons && cp -R public/img/. dist/img/ && cp -R public/icons/. dist/icons/ && cp src/js/main.js dist/app.js",
+    "dev": "mkdir -p dist/img dist/icons && cp -R public/img/. dist/img/ && cp -R public/icons/. dist/icons/ && cp src/js/main.js dist/app.js && tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
+    "build": "mkdir -p dist/img dist/icons && cp -R public/img/. dist/img/ && cp -R public/icons/. dist/icons/ && cp src/js/main.js dist/app.js && tailwindcss -i ./src/css/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [
+    "academic",
+    "tailwindcss",
+    "public-administration",
+    "university"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
